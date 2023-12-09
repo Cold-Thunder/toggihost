@@ -1,0 +1,95 @@
+.home-hosting-section,
+.home-hosting,
+.hosting-img-sec,
+.hosting-des-sec,
+.view-plans{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.home-hosting-section{
+    flex-direction: column;
+}
+.home-hosting{
+    margin: 30px 0;
+    margin-bottom: 10px;
+    width:75vw;
+    border:2px solid green;
+    border-radius: 10px;
+    background-image: url("hosting/hosting-homepage-banner.png"); /*lading images from publc folder */
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-color: rgba(10, 250, 10, 0.377);
+}
+.hosting-des-sec{
+    flex-direction: column;
+    width: 55%;
+    /* background-color: blue; */
+}
+.hosting-img-sec{
+    width: 45%;
+}
+
+.hosting-img{
+    width:80%;
+    height: 290px;
+}
+
+.hosting-des-title{
+    margin-top: 30px;
+    height: 60px;
+    color:green;
+}
+.hosting-des-subtitle{
+    height: 30px;
+}
+
+.hosting-offer-list{
+    list-style-type:none;
+}
+.check-mark{
+    margin: 0  10px;
+    color: green;
+}
+.hosting-list-item{
+    margin:10px;
+    font-size: 18px;
+}
+.view-plans{
+    margin: 20px 0;
+    margin-bottom: 30px;
+    height: 50px;
+    width: 200px;
+    background-color: green;
+    border-radius: 10px;
+    transition: all 0.2s ease-in;
+}
+.viewPlansBtn{
+    text-decoration: none;
+    color:white;
+    font-size: 20px;
+    font-weight:bold;
+}
+.view-plans:hover{
+    background-color: rgb(4, 161, 4);
+    box-shadow: 3px 3px 5px rgb(0,0,0,0.1),
+    -3px 3px 5px rgb(0,0,0,0.1),
+    3px -3px 5px rgb(0,0,0,0.1),
+    -3px -3px 5px rgb(0,0,0,0.1);
+}
+.hosting-supports{
+    justify-content: center;
+    align-items: center;
+    display:flex;
+    width: 100vw;   
+    background-color: #f7f5f5;
+}
+.hosting-supports-img{
+    width: 80%;
+}
+@media (max-width: 960px){
+    .home-hosting-section{
+        display:none;
+    }
+}

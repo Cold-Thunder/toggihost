@@ -1,0 +1,124 @@
+.customerSignupSection, .signupFormSection, .customerForm{
+    justify-content:center;
+    display:flex;
+    align-items: center;
+}
+
+.customerSignupSection{
+    flex-direction: column;
+}
+
+.signupFormSection{
+    flex-direction:column;
+    margin:40px;
+    width:100vw;
+}
+.customerForm{
+    flex-direction: column;
+    width:90vw;
+}
+.customerForm h1{
+    margin: 30px 0;
+    width:50%;
+}
+.custForm{
+    width:50%;
+}
+.inputSection{
+    justify-content: left;
+    display: flex;
+    flex-direction: column;
+    margin:10px 0;
+}
+.itelic{
+    color:rgb(0,0,0,0.4);
+}
+.custLabel{
+    margin:10px 0;
+    font-size:18px;
+    color:rgb(0,0,0,0.7);
+}
+.custInput{
+    height: 40px;
+    width:100%;
+    border: none;
+    border-radius:5px;
+    border: 1px solid rgb(0,0,0,0.3);
+    outline:none;
+    padding:5px;
+    font-size:18px;
+    box-sizing: border-box;;
+}
+.custInput:focus{
+    box-shadow:2px 2px 5px rgb(0,0,0,0.1),
+    -2px 2px 5px rgb(0,0,0,0.1),
+    2px -2px 5px rgb(0,0,0,0.1),
+    -2px -2px 5px rgb(0,0,0,0.1);
+}
+
+.selectInput{
+    color:rgb(0,0,0,0.7);
+    height:30px;
+}
+.selectInput:hover{
+    background-color:rgb(0, 204, 255);
+    font-size:20px;
+}
+.custSubBtn{
+    margin:30px 0;
+    width:100%;
+    height:40px;
+    border:none;
+    border-radius:7px;
+    font-size:18px;
+    color:white;
+    background-color:rgb(4, 158, 4);
+}
+.custSubBtn:hover{
+    background-color:green;
+}
+.error{
+    color:red;
+}
+.passInput{
+    position:relative;
+}
+.showIcon{
+    justify-content: center;
+    align-items: center;
+    display:flex;
+    top:0;
+    right:0;
+    height:40px;
+    width:40px;
+    font-size:20px;
+    border:none;
+    border-radius:5px;
+    background-color:rgb(0,0,0,0);
+    position:absolute;
+}
+
+.accept-section{
+    justify-content:left;
+    display:flex;
+    align-items:start;
+    flex-direction:row;
+    margin: 20px 0;
+    font-size:13px;
+}
+.checkbox{
+    margin-right:10px;
+}
+@media (max-width:960px){
+    .customerForm h1{
+        margin-bottom:0;
+        width: 100%;
+    }
+    .custForm{
+        width:90vw;
+    }
+    .custInput{
+        width:100%;
+    }
+    
+}

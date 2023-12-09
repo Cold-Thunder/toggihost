@@ -1,0 +1,299 @@
+.homePage,
+ .homePageSection,
+ .popup-container,
+.popupSection, 
+.closePopup,
+.domainSearchSection,
+.domainInputSection, 
+.domainSearch,
+.domainHeading,
+.domainForm, .pricing-section, 
+.all-pricing, 
+.whats-new-section{
+    justify-content:center;
+    display:flex;
+    align-items:center;
+}
+.homePage{
+    flex-direction:column;
+    height:fit-content;
+    width: 100vw;
+    overflow: hidden;
+}
+.homePageSection{
+    flex-direction: column;
+    width:90vw;
+    /* height: 100px; */
+}
+.popup-container{
+    top:0;
+    height:35px;
+    width:100vw;
+    position:relative;
+    z-index: 2;
+}
+.popupSection{
+    height:33px;
+    width:100vw;
+    padding:5px;
+    box-sizing:border-box;
+    background-color: rgb(5, 182, 5);
+    position:absolute;
+    transition:all 0.2s ease-in;
+    z-index:2;
+    box-shadow:3px 3px 3px rgb(0,0,0,0.1),
+    -3px 3px 3px rgb(0,0,0,0.1),
+    3px -3px 3px rgb(0,0,0,0.1),
+    -3px -3px 3px rgb(0,0,0,0.1);
+}
+.hidePopup{
+    transform: translateY(-1000%);
+}
+.popupSection p{
+    font-size:16px;
+    color:white;
+    font-weight:bold;
+}
+.closePopup{
+    margin-left: 15px;
+    height: 25px;
+    width:25px;
+    border-radius: 50%;
+    border:none;
+    /* border:2px solid white; */
+    font-size:18px;
+    font-weight:bold;
+    color:black;
+    background-color:white;
+    transition: all 0.2s ease-in;
+}
+.closePopup:hover{
+    background-color: green;
+    color:white;
+}
+/* domain search section starts here  */
+.domainSearchSection{
+    flex-direction:column;
+    width:100vw;
+    height: 450px;
+    background-image: url("../images/homePage/new-homepage-banner.png");
+    background-repeat:no-repeat;
+    overflow:hidden;
+}
+.domainSearch{
+    flex-direction:column;
+    width:90%;
+}
+.domainHeading{
+    flex-direction:column;
+    margin: 30px;;
+}
+.domainHeading h1{
+    font-size:45px;
+    margin:10px;
+}
+.domainHeading p{
+    font-size: 20px;
+}
+.domainInputSection{
+    width:90vw;
+}
+.domainForm{
+    width:100%;
+    margin-bottom:40px;
+}
+.domainInput{
+    height: 45px;
+    width:50%;
+    font-size: 20px;
+    color: rgb(92, 92, 92);
+    padding:10px;
+    border: 2px solid rgb(0,0,0,0.1);
+    border-radius: 10px 0 0 10px;
+    box-sizing: border-box;
+    outline:none;
+}
+.domainInput:focus{
+    border:2px solid green;
+}
+.domainSubmitBtn{
+    height: 45px;
+    width:100px;
+    font-size:20px;
+    color:white;
+    border-radius: 0 10px 10px 0;
+    border:none;
+    background-color: green;
+    transition:all 0.2s ease-in;
+}
+.domainSubmitBtn:hover{
+    background-color:rgb(7, 189, 7);
+    box-shadow: 3px 3px 5px rgb(0,0,0,0.1),
+    -3px 3px 5px rgb(0,0,0,0.1),
+    3px -3px 5px rgb(0,0,0,0.1),
+    -3px -3px 5px rgb(0,0,0,0.1);
+}
+
+
+/* pricing in domain section starts here  */
+.pricing-section{
+    flex-direction:column;
+    width: 50%;
+}
+.all-pricing{
+    align-items: start;
+    width:100%;
+}
+.pricing{
+    text-align: center;
+    padding-top:20px;
+    margin: 10px;
+    height: 100px;
+    width: 30%;
+    border-right: 1px solid rgb(0,0,0,0.1);
+}
+.pricing:last-of-type{
+    border:none;
+}
+.pricing h2{
+    margin-bottom:10px;
+    font-size:24px;
+
+}
+.pricing .previous{
+    text-decoration: line-through;
+    color:red;
+}
+
+.pricing-btn{
+    justify-content: center;
+    align-items: center;
+    display:flex;
+    text-decoration: none;
+    text-align:center;
+    color:white;
+    font-weight:bold;
+    border-radius: 5px;
+    height: 40px;
+    width:150px;
+    background-color: green;
+    box-shadow:2px 2px 3px rgb(0,0,0,0.1),
+    -2px 2px 3px rgb(0,0,0,0.1),
+    2px -2px 3px rgb(0,0,0,0.1),
+    -2px -2px 3px rgb(0,0,0,0.1);
+    transition:all 0.2s ease-in;
+}
+.pricing-btn:hover{
+    background-color: rgb(5, 182, 5);
+}
+/* what's new section starts here  */
+.whats-new-section{
+    flex-direction:column;
+    width:100vw;
+}
+.whats-new-section h3{
+    margin: 50px 0;
+    margin-bottom: 30px;
+    font-size: 26px;
+    /* height: 60px; */
+    border-bottom:3px solid green;
+}
+
+.buyNowBtn{
+    justify-content: center;
+    align-items: center;
+    display:flex;
+    margin: 30px 0;
+    margin-top:-22px;
+    width: 120px;
+    height: 35px;
+    text-decoration:none;
+    font-size: 20px;
+    font-weight:bold;
+    color: green;
+    border: 4px solid green;
+    border-radius: 10px;
+    background-color: white;
+    transition: all 0.2s ease-in;
+}
+.buyNowBtn:hover{
+    background-color:green;
+    color:white;
+}
+@media (max-width: 960px){
+    .homePage{
+        width:100%;
+    }
+    .popup-container{
+        justify-content: center;
+        display:flex;
+        align-items: center;
+        width:100vw;
+    }
+    .popupSection{
+        top:0;
+        width:98vw;
+        height: 80px;
+        padding:10px;
+        line-height: 20px;
+    }
+    .popupSection p{
+        justify-content: left;
+        width: 90%;
+    }
+    .closePopup{
+        right:8px;
+        height:25px;
+        width:25px;
+        position: absolute;
+    }
+    .domainSearchSection{
+        
+    }
+    .domainHeading{
+        margin-top: 5px;
+        width:90vw;
+        text-align: center;
+    }
+    .domainHeading h1{
+        font-size: 30px;
+    }
+    .domainHeading p{
+        font-size: 18px;
+    }
+    .domainForm{
+        justify-content: center;
+        align-items: center;
+        display:flex;
+        margin-bottom:0;
+    }
+
+    .searchBox{
+        justify-content:center;
+        display:flex;
+        align-items: center;
+        width:100vw;
+        background-color:red;
+    }
+    .domainInput{
+        margin: 5px 0;
+        width:70vw;
+    }
+    .pricing-section{
+        width:100vw;
+    }
+    .all-pricing{
+        flex-wrap:wrap;
+        margin-bottom:15px;
+    }
+    .pricing{
+        padding-top:10px;;
+        margin:0px 5px;
+        width:45%;
+        height: 70px;
+        border:none;
+    }
+    .pricing-btn{
+        /* margin-top:15px; */
+    }
+}

@@ -1,0 +1,164 @@
+.headerSection,
+.header,
+ .headerMiddleSection, 
+ .whoisSection, 
+ .whoisFormSection,
+ .errorSection{
+    justify-content:center;
+    display:flex;
+    align-items:center;
+}
+.headerSection{
+    flex-direction:column;
+    margin-bottom: 0;
+    width:100vw;
+    box-shadow: 2px 2px 2px rgb(0,0,0,0.1),
+    -2px 2px 2px rgb(0,0,0,0.1),
+    2px -2px 2px rgb(0,0,0,0.1),
+    -2px -2px 2px rgb(0,0,0,0.1);
+    transition: all 0.3s ease-in;
+}
+.sticky{
+    top: 0;
+    background-color: rgb(241, 240, 240);
+    box-shadow: 2px 2px 3px rgb(0,0,0,0.1),
+    -2px 2px 3px rgb(0,0,0,0.1),
+    2px -2px 3px rgb(0,0,0,0.1),
+    -2px -2px 3px rgb(0,0,0,0.1);
+    position:sticky;
+    z-index: 5;
+}
+.headerTop{
+    transition: all 0.3s ease-in;
+}
+.stickyTop{
+    display:none;
+}
+
+.header{
+    flex-direction: column;
+    width: 90vw;
+}
+
+.headerMiddleSection{
+    height:70px;
+    width:100%;
+    /* background-color: yellow; */
+}
+
+.logoSection{
+    justify-content: left;
+    display:flex;
+    align-items: center;
+    width:50%;
+    height: 100%;
+    /* background-color: blue; */
+}
+.whoisSection{
+    height: 100%;
+    width:50%;
+    /* background-color:green; */
+}
+.whoisFormSection{
+    width:100%;
+    /* background-color: red; */
+}
+.whoisInputSection{
+    justify-content: right;
+    display:flex;
+    align-items:end;
+    flex-direction: column;
+    width:100%;
+    margin-right: 10px;
+    position: relative;
+}
+.inputSec{
+    width:80%;
+    height: 40px;
+    border: none;
+    border-radius:7px;
+    border:2px solid rgb(0,0,0,0.1);
+    padding:8px;
+    outline:none;
+    font-size:18px;
+    color:rgba(32, 32, 32, 0.6);
+    box-sizing:border-box;
+}
+.inputSec:focus{
+    box-shadow: 2px 2px 3px rgb(0,0,0,0.06),
+    -2px 2px 3px rgb(0,0,0,0.06),
+    2px -2px 3px rgb(0,0,0,0.06),
+    -2px -2px 3px rgb(0,0,0,0.06);
+}
+.errorSection{
+    top: 48px;
+    left: 100px;
+    height: 30px;
+    width: 90%;
+    border-radius: 5px;
+    background-color: rgb(236, 249, 250);
+    position:absolute;
+    z-index: 2;
+    box-shadow: 2px 2px 3px rgb(0,0,0,0.1),
+    -2px 2px 3px rgb(0,0,0,0.1),
+    2px -2px 3px rgb(0,0,0,0.1),
+    -2px -2px 3px rgb(0,0,0,0.1);
+    transition:all 0.3s ease-in;
+}
+
+.whoisBtn{
+    width:130px;
+    height: 40px;
+    font-size:18px;
+    color:white;
+    border:none;
+    border-radius: 7px;
+    background-color: rgb(4, 146, 4);
+    transition: all 0.2s ease-in;
+}
+.whoisBtn:hover{
+    background-color:rgb(7, 189, 7);
+    box-shadow: 3px 3px 5px rgb(0,0,0,0.1),
+    -3px 3px 5px rgb(0,0,0,0.1),
+    3px -3px 5px rgb(0,0,0,0.1),
+    -3px -3px 5px rgb(0,0,0,0.1);
+}
+
+@media (max-width: 960px){
+
+    .headerSection{
+        justify-content: center;
+        align-items:center;
+        display:flex;
+        margin-bottom: 0px;
+        height: 180px;
+    }
+    .headerTop{
+        display:none;
+    }
+    .headerMiddleSection{
+        flex-direction:column;
+    }
+    .logoSection{
+        justify-content: left;
+        width:100vw;
+    }
+    .whoisSection{
+        width:100vw;
+        margin:20px 0;
+    }
+    .whoisFormSection{
+        width:90%;
+    }
+    .whoisInputSection{
+        width:100%;
+    }
+    .errorSection{
+        left:0;
+        width: 90vw;
+    }
+    .inputSec{
+        width:100%;
+    }
+    
+}

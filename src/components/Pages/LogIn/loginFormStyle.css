@@ -1,0 +1,148 @@
+*{
+    font-family:"Arial";
+}
+.login-main, .login-form, .login-main h1{
+    justify-content: center;
+    align-items: center;
+    display:flex;
+}
+
+.login-main{
+    flex-direction: column;
+    margin: 20px;
+}
+
+.login-main h1{
+    height:100px;
+}
+.login-form{
+    flex-direction:column;
+    margin:40px;
+    margin-top:0;
+    padding-top:20px;
+    padding-bottom:40px;
+    width:35%;
+    /* height:350px; */
+    border: 1px solid rgba(128, 128, 128, 0.274);
+    border-radius:10px;
+    background-color: rgb(214, 213, 213);
+    box-sizing: border-box;
+    box-shadow: 2px 2px 5px rgb(0,0,0,0.1),
+    -2px 2px 5px rgb(0,0,0,0.1),
+    2px -2px 5px rgb(0,0,0,0.1),
+    -2px -2px 5px rgb(0,0,0,0.1);
+}
+
+.input-section{
+    justify-content: left;
+    display:flex;
+    align-items: left;
+    flex-direction: column;
+    width:100%;
+    margin: 20px 0;
+    margin-bottom: 0;
+}
+
+.label{
+    font-size: 18px;
+    color:rgb(0,0,0,0.7);
+}
+
+.input{
+    margin: 6px 0;
+    height: 40px;
+    width:350px;
+    border: 1px solid rgb(0,0,0,0.3);
+    border-radius: 5px;
+    font-size: 18px;
+    padding: 5px;
+    box-sizing:border-box;
+    outline:none !important;
+}
+.input:focus{
+    box-shadow:2px 2px 5px rgb(93, 203, 247, 0.3),
+    -2px 2px 5px rgb(93, 203, 247, 0.3),
+    2px -2px 5px rgb(93, 203, 247, 0.3),
+    -2px -2px 5px rgb(93, 203, 247, 0.3);
+}
+.passwordInput{
+    position: relative;
+}
+.showPassIcon{
+    justify-content: center;
+    align-items: center;
+    display:flex;
+    right:0px;
+    top:5px;
+    height: 40px;
+    width:35px;
+    font-size:20px;
+    color:black;
+    border:none;
+    background-color:rgb(0,0,0,0);
+    position: absolute;
+}
+.forget-section{
+    height: 30px;
+    text-align:right;
+}
+
+.forgetLink{
+    color: rgb(5, 156, 216);
+}
+
+.login-btn{
+    /* margin-bottom:40px; */
+    height:40px;
+    width: 100%;
+    border:none;
+    border-radius: 6px;
+    font-size: 18px;
+    color:white;
+    background-color:rgb(4, 190, 4);
+    transition:all 0.2s ease-in;
+}
+.login-btn:hover{
+    background-color:green;
+}
+
+.error-section{
+    justify-content: left;
+    display: flex;
+    align-items:center;
+    height:25px;
+    color:red;
+}
+
+.createBtn{
+    border-top:1px solid rgba(128, 128, 128, 0.493);
+    margin-top: 20px;
+    padding-top: 20px;
+    color:rgb(0,0,0,0.6);
+}
+.createLink{
+    color: rgb(5, 156, 216);
+    text-decoration:none;
+}
+.createLink:hover{
+    color: rgb(2, 82, 114);
+    text-decoration: underline;
+}
+
+@media (max-width:960px){
+    .login-form{
+        width:95vw;
+    }
+    form{
+        width:95%;;
+    }
+    .input-section{
+        justify-content: center;
+        display:flex;
+        align-items:left;
+        width:98%;
+    }
+    .input{
+        width: 100%;;
+    }
+}

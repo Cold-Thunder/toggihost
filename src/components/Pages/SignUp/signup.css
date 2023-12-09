@@ -1,0 +1,54 @@
+.signupPage, .signupSection, .signupTypes, .signupTypeBtn, .signupBtn{
+    justify-content: center;
+    align-items: center;
+    display:flex;
+}
+.signupPage{
+    flex-direction:column;
+    font-family: 'Arial';
+}
+.signupSection{
+    flex-direction: column;
+    margin: 50px 0;
+    height:400px;
+    width:90vw;
+    background-color:rgb(229, 248, 253);
+    border-radius: 20px;
+    box-shadow:3px 3px 5px rgb(0,0,0,0.1),
+    -3px 3px 5px rgb(0,0,0,0.1),
+    3px -3px 5px rgb(0,0,0,0.1),
+    -3px -3px 5px rgb(0,0,0,0.1);
+}
+.signupTypes{
+    flex-direction: row;
+}
+
+.signupTypeBtn{
+
+}
+.signupBtn{
+    text-decoration:none;
+    color:white;
+    font-size:20px;
+    margin:30px;
+    height:60px;
+    width:300px;
+    background-color: green;
+    border-radius:15px;
+    transition:all 0.2s ease-in;
+}
+.signupBtn:hover{
+    box-shadow: 3px 3px 5px rgb(0,0,0,0.1),
+    -3px 3px 5px rgb(0,0,0,0.1),
+    3px -3px 5px rgb(0,0,0,0.1),
+    -3px -3px 5px rgb(0,0,0,0.1);
+}
+
+@media (max-width: 960px){
+    .signupTypes{
+        flex-direction: column;
+    }
+    .signupBtn{
+        width:70vw;
+    }
+}

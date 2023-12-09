@@ -1,0 +1,33 @@
+.topHeaderMain, .topHeaderSection{
+    justify-content: center;
+    display:flex;
+    align-items: center;
+}
+
+.topHeaderMain{
+    height: 40px;
+    width:100vw;
+    background-color: rgb(43, 42, 42);
+}
+.topHeaderSection{
+    width: 95vw;
+}
+
+.topLeft{
+    width:50%;
+}
+
+.topRight{
+    width: 50%;
+}
+
+.topLink{
+    margin: 0 10px;
+    text-decoration: none;
+    color:white;
+    font-size: 14px;
+    transition: all 0.1s ease-in;
+}
+.topLink:hover{
+    color:rgb(121, 199, 5);
+}

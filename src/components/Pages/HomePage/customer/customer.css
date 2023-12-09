@@ -1,0 +1,115 @@
+.customer-section,
+.customer-heading,
+.customer-subtitle,
+.customer-comment-section,
+.costomer-comment,
+.comment,
+.comment-author,
+.clients{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.customer-section{
+    flex-direction:column;
+    width:80vw;
+}
+
+.customer-heading{
+    flex-direction: column;
+}
+.customer-heading h6{
+    margin: 40px 0;
+    margin-bottom: 10px;
+    font-size: 26px;
+    position: relative;
+}
+
+
+.customer-heading h6::before,
+.customer-heading h6::after {
+    content: '';
+    top: 43%;
+    height: 0;
+    width: 0;
+    position: absolute;
+}
+
+.customer-heading h6::before {
+    border-top: 2px solid transparent;
+    border-bottom: 2px solid transparent;
+    border-right: 180px solid rgb(206, 204, 204);
+    left: -55%;
+}
+
+.customer-heading h6::after {
+    right: -55%;
+    border-top: 2px solid transparent;
+    border-bottom: 2px solid transparent;
+    border-left: 180px solid rgb(206, 204, 204);
+}
+
+.customer-subtitle{
+    width: 60vw;
+    font-size: 17px;
+}
+.customer-comment-section{
+    margin: 20px 0;
+}
+.customer-comment{
+    width: 60vw;
+}
+
+.comment{
+    margin: 10px 0;
+    width: 100%;
+    text-align: center;
+    font-size: 18px;
+    color: rgba(110, 109, 109, 0.8);
+}
+
+.comment-author{
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.clients{
+    width: 100vw;
+    margin-bottom: 35px;
+}
+
+@media (max-width: 960px){
+    .customer-section{
+        width: 95vw;
+    }
+    .customer-heading{
+        width:100%;
+        text-align: center;
+    }
+    .customer-heading h6{
+        font-size: 22px;
+
+    }
+    .customer-subtitle{
+        width: 90vw;
+    }
+    
+    .customer-comment{
+        width: 95vw;
+    }
+    .customer-heading h6::before, .customer-heading h6::after{
+        top: 100%;
+    }
+    .customer-heading h6::before {
+        left: 0%;
+    }
+    .customer-heading h6::after {
+        right: 0%;
+    }
+    
+    .clients-image{
+        width: 95vw;
+        height: 25px;
+    }
+}

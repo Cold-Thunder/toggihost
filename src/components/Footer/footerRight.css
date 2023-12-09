@@ -1,0 +1,42 @@
+.footerRightSection{
+    justify-content: left;
+    display: flex;
+}
+
+.footerRightSection{
+    font-family: Arial, sans-serif;
+    flex-wrap:wrap;
+    width:95%;
+}
+.section{
+    margin:20px 0;
+    margin-bottom:0;
+    width: 33%;
+    font-size:18px;
+    font-weight:lighter;
+    color:white;
+    padding:10px;
+    box-sizing: border-box;
+}
+
+.sectionTitle{
+    height:40px;
+    font-size:18px;
+    font-weight:bold;
+}
+.sectionBtns{
+    justify-content: left;
+    display: flex;
+    flex-direction: column;
+}
+.sectionBtn{
+    margin: 3px 0;
+    text-decoration:none;
+    color:rgb(235, 232, 232);
+    font-size:17px;
+    transition:all 0.3s ease-in;
+}
+.sectionBtn:hover{
+    width:fit-content;
+    text-decoration: underline;
+}

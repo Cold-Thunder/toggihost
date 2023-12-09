@@ -1,0 +1,197 @@
+.domain-pricing-section,
+.domain-pricing-heading,
+.domain-pricing,
+.domain-pricing-manu,
+.domain-pricing-view,
+.domain-pricing-table,
+.show-pricing-manu,
+.pricing-offers,
+.pricing-table,
+.pricing-table-heading,
+.drop-icon {
+    justify-content: center;
+    display: flex;
+    align-items: center;
+}
+
+.domain-pricing-section {
+    flex-direction: column;
+}
+
+/* domain pricing table heading section starts */
+/* show pricing manu starts here  */
+.show-pricing-manu{
+    margin: 10px 0;
+    width: 90vw;
+    display:none;   
+}
+.pricing-offers{
+    height: 45px;
+    width: 90vw;
+    border:none;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 10px;
+}
+.pricing-name{
+    width: 90%;
+    padding: 10px;
+    text-align: left;
+    box-sizing:border-box;
+}
+.drop-icon{
+    width: 10%;
+}
+
+/* show pricing manus ends here  */
+
+.domain-pricing{
+    flex-direction: column;
+}
+.domain-pricing-heading {
+    margin-bottom: 30px;
+    width: 100vw;
+}
+
+.domain-pricing-heading h3 {
+    font-size: 28px;
+}
+
+.domain-pricing-manu {
+    margin-bottom: 30px;
+    width: 44vw;
+    border-radius: 10px;
+    box-shadow: 2px 2px 3px rgb(0, 0, 0, 0.1),
+        -2px 2px 3px rgb(0, 0, 0, 0.1),
+        2px -2px 3px rgb(0, 0, 0, 0.1),
+        -2px -2px 3px rgb(0, 0, 0, 0.1);
+}
+
+.domain-pricing-btn {
+    padding-left: 21px;
+    padding-right: 20px;
+    height: 50px;
+    border: none;
+    /* border: 1px solid black; */
+    font-size: 17px;
+    font-weight: bold;
+    background-color: rgb(0, 0, 0, 0);
+    transition: all 0.2s ease-in;
+    box-sizing: border-box;
+}
+
+.pricing-btn-active {
+    background-color: green;
+    color: white;
+}
+
+.domain-pricing-btn:nth-child(1) {
+    border-radius: 10px 0 0 10px;
+}
+
+.domain-pricing-btn:nth-child(4) {
+    border-radius: 0 10px 10px 0;
+}
+
+/* domain pricing heading section ends here  */
+.pricing-table{
+    flex-direction: column;
+}
+.domain-pricing-view{
+    margin-bottom: 30px;
+    width: 100vw;
+}
+.domain-pricing-table{
+    width: 90vw;
+    height: 400px;
+    border-radius: 10px;
+    overflow-y:scroll;
+    scroll-behavior: smooth;
+    scrollbar-width: thin;
+    position: relative;
+    box-shadow:
+    inset -2px 2px 5px rgb(0,0,0,0.3),
+    2px 2px 3px rgb(0,0,0,0.1),
+    -2px 2px 3px rgb(0,0,0,0.1),
+    2px -2px 3px rgb(0,0,0,0.1),
+    -2px -2px 3px rgb(0,0,0,0.1);
+}
+
+.pricing-table{
+    top: 0;
+    position:absolute
+}
+.pricing-table-heading{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    background-color:black;
+    height: 45px;
+    color:white;
+    font-size: 18px;
+    border-bottom: 3px solid rgb(3, 167, 3);
+}
+.pricing-heading{
+    width: 22vw;
+    height: 40px;
+    border-right: 1px solid rgb(141, 139, 139);
+}
+.pricing-heading:nth-child(4){
+    border:none;
+}
+
+.table-data-body{
+    justify-content: center;
+    display:contents;
+    align-items: start;
+}
+.table-data-row:nth-child(odd){
+    background-color: rgb(221, 219, 219);
+}
+.table-pricing-row:nth-child(even){
+    background-color: rgb(187, 250, 187);
+}
+.pricing-name{
+    font-weight:bold;
+}
+.pricing-data{
+    margin: 0;
+    width: 22vw;
+    height: 35px;
+    text-align: center;
+    font-size: 18px;
+    border-right: 1px solid rgb(0,0,0,0.1);
+}
+.pricing-data:nth-child(4){
+    border: none;
+}
+
+@media (max-width: 960px){
+    .show-pricing-manu{
+        display: block;
+    }
+    .domain-pricing-manu{
+        margin-top: 10px;
+        width: 95vw;
+        flex-direction: column;
+        display: none;
+        transition: all 0.2s ease-in;
+    }
+    .domain-pricing-heading{
+        margin-bottom: 10px;
+    }
+    .show-manu{
+        margin-bottom: 10px;
+        display:block;
+    }
+    .domain-pricing{
+        margin-top: 0px;
+    }
+    .domain-pricing-btn{
+        width: 100%;
+        border-radius: 10px;
+    }
+    .domain-pricing-btn:nth-child(1), .domain-pricing-btn:nth-child(4){
+        border-radius: 10px;;
+    }
+}

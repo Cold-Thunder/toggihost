@@ -1,0 +1,227 @@
+.web-plan-section,
+.web-plan-title,
+.web-plan,
+.web-plan-table,
+.plan-table,
+.table-heading,
+.table-body,
+.table-data {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.web-plan-section {
+    margin: 30px 0;
+    margin-top: 70px;
+
+}
+
+.web-plan {
+    flex-direction: column;
+}
+
+.web-plan-title {
+    width: 60vw;
+    position: relative;
+}
+
+.web-plan-title h6 {
+    font-size: 27px;
+}
+
+.web-plan-title h6::before,
+.web-plan-title h6::after {
+    content: '';
+    top: 43%;
+    height: 0;
+    width: 0;
+    position: absolute;
+}
+
+.web-plan-title h6::before {
+    border-top: 2px solid transparent;
+    border-bottom: 2px solid transparent;
+    border-right: 180px solid rgb(206, 204, 204);
+    left: 0;
+}
+
+.web-plan-title h6::after {
+    right: 0;
+    border-top: 2px solid transparent;
+    border-bottom: 2px solid transparent;
+    border-left: 180px solid rgb(206, 204, 204);
+}
+
+/* web plan table starts here  */
+.plan-table {
+    flex-direction: column;
+    width: 80vw;
+    margin-top: 30px;
+}
+
+.table-heading {
+    width: 70vw;
+    background-color: black;
+    border-bottom: 3px solid rgb(5, 196, 5);
+}
+
+.heading {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    width: 11vw;
+    height: 50px;
+    /* background-color: blue; */
+    font-size: 18px;
+    color: white;
+    border-left: 1px solid white;
+    box-sizing: border-box;
+}
+
+.heading:nth-child(1) {
+    border: none;
+    width: 23vw;
+}
+
+.heading-price {
+    margin-top: 5px;
+    color: rgb(5, 196, 5);
+    font-size: 20px;
+}
+
+/* table data section  */
+.table-body {
+    flex-direction: column;
+    width: 70vw;
+}
+
+.table-data {
+    width: 70vw;
+    border: 1px solid rgba(165, 165, 165, 0.2);
+}
+
+.table-data:nth-child(odd) {
+    background-color: rgba(155, 155, 155, 0.2);
+}
+
+.data {
+    padding: 7px;
+    width: 11vw;
+    height: 37px;
+    font-size: 17px;
+    text-align: center;
+    color: rgb(0, 0, 0, 0.7);
+    border-left: 1px solid rgba(165, 165, 165, 0.2);
+    box-sizing: border-box;
+}
+
+.data:nth-child(1) {
+    text-align: left;
+    width: 23vw;
+    border: none;
+}
+
+.table-price-row {
+    height: 130px;
+}
+
+.price-data {
+    justify-content: left;
+    display: flex;
+    align-items: center;
+    height: 100%;
+    padding: 7px;
+    width: 11vw;
+    font-size: 17px;
+    text-align: center;
+    color: rgb(0, 0, 0, 0.7);
+    border-left: 1px solid rgba(165, 165, 165, 0.2);
+    box-sizing: border-box;
+}
+
+.select-drop {
+    height: 35px;
+    width: 8vw;
+    padding: 8px;
+    font-size: 15px;
+    border: 1px solid rgb(150, 150, 150);
+    border-radius: 5px;
+    background-color: rgb(235, 235, 235);
+    box-sizing: border-box;
+}
+
+.table-buy-btn {
+    margin: 10px 0;
+    height: 38px;
+    width: 8vw;
+    font-size: 17px;
+    border: none;
+    border-radius: 5px;
+    background-color: green;
+    color: white;
+    font-weight: bold;
+    box-shadow: 2px 2px 3px rgb(0, 0, 0, 0.1),
+        -2px 2px 3px rgb(0, 0, 0, 0.1),
+        2px -2px 3px rgb(0, 0, 0, 0.1),
+        -2px -2px 3px rgb(0, 0, 0, 0.1);
+    transition: all 0.2s ease-in;
+}
+.table-buy-btn:hover{
+    background-color: rgb(4, 161, 4);
+}
+
+@media (max-width:960px) {
+    .web-plan-title {
+        width: 90vw;
+        text-align: center;
+    }
+
+    .web-plan-title h6::before,
+    .web-plan-title h6::after {
+        top: 100%;
+    }
+
+    .plan-table {
+        width: 95vw;
+    }
+
+    .table-heading {
+        width: 95vw;
+    }
+
+    .table-heading-row {
+        width: 95vw;
+    }
+
+    .heading {
+        width: 20vw;
+        font-size: 11px;
+    }
+    .heading-price{
+        font-size: 11px;
+    }
+    .table-body {
+        width: 95vw;
+    }
+
+    .table-data {
+        width: 95vw;
+    }
+
+    .data {
+        width: 20vw;
+        height: max-content;
+        font-size: 11px;
+    }
+    .price-data{
+        width: 20vw;
+    }
+    .select-drop{
+        width: 13vw;
+        font-size: 12px;
+    }
+    .table-buy-btn{
+        width: 13vw;
+        font-size: 12px;;
+    }
+}

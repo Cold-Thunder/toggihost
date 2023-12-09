@@ -1,0 +1,20 @@
+.domain-section {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.domain-search-section{
+    
+}
+
+.domain-section {
+    flex-direction: column;
+}
+
+.domain-offers-section{
+    /* position: relative; */
+}
+.domain-offers{
+    
+}

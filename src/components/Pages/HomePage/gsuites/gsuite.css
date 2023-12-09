@@ -1,0 +1,236 @@
+.gsuite-section,
+.gsuite-heading,
+.gsuites,
+.suites-manu,
+.suites-view
+{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.gsuite-section {
+    flex-direction: column;
+    width: 100vw;
+    margin-top: 40px;
+}
+
+.gsuite-heading {
+    margin-bottom: 0;
+    width: 80vw;
+}
+.gsuite-title{
+    font-size: 36px;
+}
+
+.gsuites {
+    flex-direction: column;
+    margin-top: 30px;
+    width: 100vw;
+}
+.show-gsuite-manu {
+    display: none;
+}
+
+.gsuite-offers {
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    height: 50px;
+    width: 80vw;
+    border: none;
+    border-radius: 10px;
+    font-size: 20px;
+    font-weight: bold;
+    color: rgb(68, 67, 67);
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.gsuite-name {
+    width: 80%;
+}
+
+.drop{
+    justify-content: right;
+    display: flex;
+    align-items: center;
+    height: 100%;
+    width: 20%;
+    transition: all 0.2s ease-in;
+}
+
+.suites-manu {
+    width: 60vw;
+    border-radius: 10px;
+    box-shadow: 3px 3px 5px rgb(0,0,0,0.1),
+    -3px 3px 5px rgb(0,0,0,0.1),
+    3px -3px 5px rgb(0,0,0,0.1),
+    -3px -3px 5px rgb(0,0,0,0.1);
+}
+
+.suite-btn {
+    width: 20vw;
+    height: 50px;
+    border: none;
+    border-bottom: 3px solid rgb(0, 0, 0, 0);
+    background-color: rgb(0, 0, 0, 0);
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+    color: green;
+    transition: all 0.2s ease-in;
+}
+.suite-btn:nth-child(1){
+    border-radius: 10px 0 0 10px;
+}
+.suite-btn:nth-child(3){
+    border-radius: 0 10px 10px 0;
+}
+.suite-active {
+    color: white;
+    border-bottom: 3px solid green;
+    background-color: green;
+    box-shadow: 3px 3px 5px rgb(0, 0, 0, 0.1),
+        -3px 3px 5px rgb(0, 0, 0, 0.1),
+        3px -3px 5px rgb(0, 0, 0, 0.1),
+        -3px -3px 5px rgb(0, 0, 0, 0.1);
+}
+
+.suites-view {
+    margin: 30px 0;
+    padding: 20px;
+    padding-left:30px; 
+    width: 80vw;
+    border-radius: 10px;
+    box-sizing:border-box;
+    box-shadow: 3px 3px 5px rgb(0, 0, 0, 0.1),
+        -3px 3px 5px rgb(0, 0, 0, 0.1),
+        3px -3px 5px rgb(0, 0, 0, 0.1),
+        -3px -3px 5px rgb(0, 0, 0, 0.1);
+    
+}
+.suite-item{
+    justify-content:left;
+    display:flex;
+    align-items: top;
+    margin: 20px 0;
+    height: 100px;
+    /* background-color: yellow; */
+}
+.suites-des {
+    width: 50%;
+    /* background-color: red; */
+}
+.suite-item-img-sec{
+    width:7%;
+    height: max-content;
+    /* background-color: blue; */
+}
+.suite-item-img{
+    height: 32px;
+    width: 100%;
+}
+.suite-item-des{
+    justify-content: left;
+    display:flex;
+    align-items: left;
+    flex-direction:column;
+    width: 90%;
+    margin-left: 15px;
+}
+
+.suite-item-heading{
+    margin: 10px 0;
+    margin-top:0;
+    margin-bottom: 15px;
+    font-size: 20px;
+}
+
+.suite-item-des p{
+    color: rgb(80, 80, 80);
+}
+.gsuite-feat-bg{
+    width: 50%;
+}
+
+.gsuite-feat-img{
+    width: 100%;
+    height: 100%;
+}
+
+
+@media (max-width: 960px) {
+    .gsuite-heading {
+        text-align: center;
+        width: 95vw;
+        font-size: 26px;
+    }
+    .gsuite-title{  
+        font-size: 20px;
+    }
+    .show-gsuite-manu{
+        display:block;
+        border-radius: 10px;
+        box-shadow: 2px 2px 3px rgb(0, 0, 0, 0.1),
+        -2px 2px 3px rgb(0, 0, 0, 0.1),
+        2px -2px 3px rgb(0, 0, 0, 0.1),
+        -2px -2px 3px rgb(0, 0, 0, 0.1);
+    }
+    .gsuite-name{
+        font-size:16px;
+    }
+    .suites-manu {
+        display: none;
+    }
+
+    .suite-btn {
+        width: 100%;
+        font-size: 16px;
+        border-radius: 10px;
+    }
+    .suite-btn:nth-child(1){
+        border-radius: 10px;
+    }
+    .suite-btn:nth-child(3){
+        border-radius: 10px;
+    }
+    .gsuite-manus-show {
+        justify-content: left;
+        display: flex;
+        align-items: left;
+        margin-top: 10px;
+        flex-direction: column;
+        height: initial;
+        width: 80vw;
+        box-shadow: 2px 2px 3px rgb(0, 0, 0, 0.1),
+        -2px 2px 3px rgb(0, 0, 0, 0.1),
+        2px -2px 3px rgb(0, 0, 0, 0.1),
+        -2px -2px 3px rgb(0, 0, 0, 0.1);
+    }
+
+    .suites-view{
+        flex-direction: column;
+        width: 98vw;
+        margin-top: 20px;
+    }
+    .suites-des{
+        width: 90vw;
+    }
+    .suite-item{
+        margin: 45px 0;
+    }
+    .suite-item-img-sec{
+        margin-right: 15px;
+    }
+    .suite-item-img{
+        width: 30px;
+        height: 27px;
+    }
+    .suite-item-des{
+        width: 90%;
+    }
+    .gsuite-feat-bg{
+        width: 90vw;
+    }
+}

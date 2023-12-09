@@ -1,0 +1,168 @@
+.navBarSection{
+    justify-content: center;
+    align-items:center;
+    display:flex;
+    width: 100vw;
+    /* overflow: hidden; */
+    /* background-color: rgb(43, 42, 42); */
+}
+.nabBarView{
+    width:100vw;
+}
+.navBar{
+    justify-content: left;
+    display:flex;
+    align-items: center;
+    flex-direction:row;
+    height:50px;
+    width:92vw;
+    /* background-color: rgb(43, 42, 42); */
+    transition:all 0.2s ease-in;
+}
+.stickyManuBar{
+    display:none;
+}
+/* navbar btn icon starts here  */
+
+.navBar-btn{
+    top:-95px;
+    right:10px;
+    height: 40px;
+    width:50px;
+    font-size:30px;
+    color:green;
+    border:none;
+    display:none;
+    background-color: rgb(0,0,0,0);
+    z-index: 4;
+    position:absolute;
+}
+.close-btn{
+    color:white;
+}
+.navBtn{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    margin:10px 0px;
+    padding: 15px;
+    border:none;
+    background: none;
+    border-bottom: 4px solid rgb(0,0,0,0);
+    height:100%;
+    color:black;
+    font-size: 16px;
+    font-family:Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    text-decoration: none;
+    box-sizing:border-box;
+    transition: all 0.1s ease-in;
+}
+
+.navBtn:hover{
+    border-bottom: 4px solid green;
+}
+.active{
+    color:white;
+    background-color: green;
+    border-bottom: 2px solid green;
+}
+.navName{
+    /* width:100px; */
+}
+.dropdown{
+    margin-top: -7px;
+    margin-left: 5px;
+    font-size:30px;
+    transform:rotateX(180deg)
+}
+
+.reseller{
+    margin-right: 0;
+    padding: 15px;
+    box-sizing:border-box;
+}
+
+.mobile-access-sec{
+    display:none;
+}
+.accessBtn{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    margin:10px 0px;
+    padding: 10px;
+    border:2px solid green;
+    border-radius: 10px;
+    background: none;
+    height:100%;
+    color:white;
+    font-size: 16px;
+    font-family:Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    box-sizing:border-box;
+    transition: all 0.1s ease-in;
+}
+.signup{
+    background-color:green;
+}
+
+@media (max-width: 960px){
+
+    .navBarSection{
+        position: relative;
+        height: 0;
+    }
+    .navbar-hide{
+        transform: translateY(-400%);
+    }
+    .navBarView{
+        top:270px;
+        /* height:100vh; */
+        width:100vw;
+        /* position:relative; */
+        background-color: red;
+        overflow-x: hidden;
+        /* z-index:-5; */
+    }
+    .navBar{
+        top: -130px;
+        padding-top:50px;
+        padding-bottom: 30px;
+        height:max-content;
+        width:100vw;
+        background-color: rgb(43, 42, 42);
+        flex-direction: column;
+        position:absolute;
+        z-index: 3;
+    }
+    .navBar-btn{
+        display: block;
+    }
+    .active{
+        background-color: rgb(0,0,0,0);
+    }
+    .navBtn{
+        justify-content:left;
+        height: 45px;
+        width: 88vw;
+        color:white;
+        text-align: left;
+        margin:5px;
+        margin-left:0;
+        border-bottom: 1px solid rgb(180, 178, 178, 0);
+        transition: all 0.3s ease-in;
+    }
+    .navBtn:hover{
+        border-bottom: 1px solid green;
+    }
+    .dropdown{
+        margin-left: 60%;
+        justify-content: right;
+        display: flex;
+        align-items: center;
+    }
+    .mobile-access-sec{
+        display:block;
+    }
+}
